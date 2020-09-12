@@ -4,6 +4,11 @@
       .modal {
         background-color: lightblue;
         display: none;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     </style>
     <title>Teste Modal</title>
@@ -11,10 +16,16 @@
 
   <body>
     <h1>Vamos testar a modal</h1>
-    <button id='detalhe'>Detalhe</button>
+    
     <div id='modal' class='modal'>
       <p>Conteúdo da modal</p>
       <button id='fecharModal'>Fechar Modal</p>
+    </div>
+
+    <div id='conteudo'>
+      <p>Aqui temos a descrição de um produto ou serviço<p>
+      <p>Preço R$25,00</p>
+      <button id='detalhe'>Detalhe</button>
     </div>
 
     <script>
