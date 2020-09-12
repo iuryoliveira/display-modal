@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <style>
+      .modal {
+        background-color: lightblue;
+        display: none;
+      }
+    </style>
+    <title>Teste Modal</title>
+  </head>
+
+  <body>
+    <h1>Vamos testar a modal</h1>
+    <button id='detalhe'>Detalhe</button>
+    <div id='modal' class='modal'>
+      <p>Conteúdo da modal</p>
+      <button id='fecharModal'>Fechar Modal</p>
+    </div>
+
+    <script>
+      var btnDetalhe = document.getElementById('detalhe');
+      var modal = document.getElementById('modal');
+      var btbFecharModal = document.getElementById('fecharModal');
+
+      btnDetalhe.onclick = function() {
+        modal.style.display = 'block';
+      }
+
+      btbFecharModal.onclick = function() {
+        modal.style.display = 'none';
+      }
+    </script>
+  <body>
+</html>
